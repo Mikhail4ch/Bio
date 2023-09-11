@@ -1,30 +1,20 @@
-<html>
-
+<!DOCTYPE html>
+<html lang="en">
 <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title> Demo of my bio </title>
+    <link rel="stylesheet" href="style.css"
 </head>
-
 <body>
-    <style>
-body{
-    color: white;
-    background-color: black;
-}
-img{
-    border-style: solid;
-    border-radius: 50%;
-    border-width: 10px;
-    border-color: gray;
-}
-    </style>
     <header>
          <h2> Representation </h2>
-     <hr>
-        <p> My name is Mikhail Makarevich and I have a <em>Github profile</em> that you can check using the link below</p>
+     
+        <p style="margin-left: 30px;"> My name is Mikhail Makarevich and I have a <span>Github profile</span> that you can check using the link below</p>
      <nav> 
         <ul>
-             <li> <a href="https://github.com/Mikhail4ch"> My profile </a> </li>
-             <li> <a href="#photo"> The photo of me </a> </li>
+             <li> <a href="https://github.com/Mikhail4ch" id="links"> My profile </a> </li>
+             <li> <a href="#photo" id="links"> The photo of me </a> </li>
         </ul>
      </nav>
     </header>
@@ -36,12 +26,12 @@ img{
       <aside>
          <details>
              <summary>Guess my age</summary>
-             <p> I am 20 years old</p>
+             <p id="links"> I am 20 years old</p>
          </details>
       </aside>
       <br> <img src="https://i.pinimg.com/originals/9f/d2/50/9fd250a18baf2ed93e91879bb0556b39.jpg" width="140" height="140" style="position: relative; left: 35px;" />
          <h3> Hobbies and own interests</h3>
-          <ul>
+          <ul class="container">
              <li> Making music in Fl Studio </li>
              <li> Exploration and speculations on crypto market</li>
              <li> Reading the works of famous sociologists and philosophers</li>
@@ -77,7 +67,7 @@ img{
  <footer>
      <h3>Way to contact:</h3>
      <form>
-        <label for="name"> Your name:</label>
+        <label for="name" > Your name:</label>
         <input type="text" id="name" name="name" required><br>
 
         <label for="email"> Your email:</label>
@@ -88,7 +78,7 @@ img{
 
         <button type="submit">Submit</button>
         <p>
-        <a href="#core">Back to the main content</a> 
+        <a id="links" href="#core">Back to the main content</a> 
         </p>
  </footer>       
 </body>
